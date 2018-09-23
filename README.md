@@ -5,15 +5,14 @@
 3. Configuring environment variables
 ```
 export JAVA_HOME=/usr/local/java/jdk1.8.0_25 (your install path)
-export JRE_HOME=${JAVA_HOME}/jre  
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
 export PATH=${JAVA_HOME}/bin:$PATH
 ```
+ps: java10 don't need the jre path
 ## tomcat install
 1. Download from http://tomcat.apache.org/download-90.cgi
 2. Unzip (tar -zxvf xxx.tar.gz)
-3. 
-(a problem with tomcat started, but an error appear in the 127.0.0.1:8080)
+(a problem with tomcat started, but an error appear in the 127.0.0.1:8080) caused by jre path
 ## maven install
 1. Download from https://maven.apache.org/download.cgi
 2. Unzip (tar -zxvf xxx.tar.gz)
